@@ -6,7 +6,7 @@
 <p>  - installation : $ sudo apt-get install cutecom </p>
 <p>  - use : $ sudo cutecom </p>
 <p>  - increase access permissions : <i><b>$ sudo chmod 666 /dev/ttyUSB0</i></b> (<b>/dev/ttyUSB0</b> is name of port )</p>
-<p>  - View name port : dmesg | grep ttyS* </p>
+<p>  - View name ports : dmesg | grep ttyS* </p>
 <p>  ...</p>
 <p><b>https://www.programmersought.com/article/40051437099/</b></p>
 <p>   - download serial package : <i>$ sudo apt-get install ros-kinetic-serial</i> #ros for Kinect version</p>
