@@ -1,0 +1,8 @@
+prefix=/home/nhan/my_ws/devel
+
+Name: serial_test
+Description: Description of serial_test
+Version: 0.0.0
+Cflags: -I/home/nhan/my_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

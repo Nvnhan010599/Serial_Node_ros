@@ -1,0 +1,8 @@
+prefix=/home/nhan/my_ws/devel
+
+Name: vidu1
+Description: Description of vidu1
+Version: 0.0.0
+Cflags: -I/home/nhan/my_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

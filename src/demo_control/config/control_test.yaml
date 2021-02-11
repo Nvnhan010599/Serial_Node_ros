@@ -1,0 +1,15 @@
+demo_car:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50 
+  #----------------------------
+  joint1_wheel_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: joint_R
+    pid: {p: 100, i: 10, d: 0.1}
+  #----------------------------
+  joint2_wheel_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: joint_L
+    pid: {p: 100, i: 10, d: 0.1}

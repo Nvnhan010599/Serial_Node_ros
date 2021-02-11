@@ -1,0 +1,10 @@
+file(REMOVE_RECURSE
+  "/home/nhan/my_ws/devel/lib/vidu1/example1_a"
+  "/home/nhan/my_ws/devel/lib/vidu1/example1_a.pdb"
+  "CMakeFiles/example1_a.dir/src/example1_a.cpp.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/example1_a.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

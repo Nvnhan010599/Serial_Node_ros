@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="serial_test" pkg="serial_test" type="serial_test">
+  <param name="V_sp" type="int" value="1" />
+  <param name="Kp" type="double" value="0.1" />
+  <param name="Ki" type="double" value="0.1" />
+  <param name="Kd" type="double" value="0.1" />
+  <param name="ON_OFF" type="bool" value="False" />
+</node>
+\endverbatim
+

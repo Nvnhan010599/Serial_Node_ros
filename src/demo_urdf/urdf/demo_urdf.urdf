@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="demo_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.52457 1.221E-10 0.045158"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="12.578"
+        ixy="7.0189E-09"
+        ixz="0.28196"
+        iyy="28.912"
+        iyz="6.7601E-09"
+        izz="41.07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demo_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.83137 0.67059 0.12941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demo_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="R_Link">
+    <inertial>
+      <origin
+        xyz="0 0 -0.05"
+        rpy="0 0 0" />
+      <mass
+        value="0.1" />
+      <inertia
+        ixx="0.32296"
+        ixy="-1.3878E-17"
+        ixz="3.9788E-18"
+        iyy="0.32296"
+        iyz="-7.0577E-19"
+        izz="0.61353" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demo_urdf/meshes/R_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demo_urdf/meshes/R_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_R"
+    type="continuous">
+    <origin
+      xyz="0 -0.5 0.0500000000000003"
+      rpy="-1.5707963267949 -0.613792902718898 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="L_Link">
+    <inertial>
+      <origin
+        xyz="0 0 0.05"
+        rpy="0 0 0" />
+      <mass
+        value="0.1" />
+      <inertia
+        ixx="0.32296"
+        ixy="6.9389E-17"
+        ixz="-4.9939E-20"
+        iyy="0.32296"
+        iyz="-7.555E-21"
+        izz="0.61353" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demo_urdf/meshes/L_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demo_urdf/meshes/L_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_L"
+    type="continuous">
+    <origin
+      xyz="0 0.5 0.05"
+      rpy="-1.5707963267949 -0.613792902718898 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>

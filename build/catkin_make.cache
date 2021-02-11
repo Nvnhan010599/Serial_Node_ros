@@ -1,0 +1,2 @@
+demo_car:demo_control:demo_urdf:serial_test:testdemo1:vidu1
+-DCATKIN_DEVEL_PREFIX=/home/nhan/my_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nhan/my_ws/install -G Unix Makefiles

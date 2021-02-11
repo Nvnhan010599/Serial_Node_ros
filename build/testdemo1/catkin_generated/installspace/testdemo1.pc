@@ -1,0 +1,8 @@
+prefix=/home/nhan/my_ws/install
+
+Name: testdemo1
+Description: Description of testdemo1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
